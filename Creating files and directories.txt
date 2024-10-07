@@ -1,0 +1,249 @@
+[ec2-user@ip-172-31-18-41 ~]$ ls
+class36  devops
+[ec2-user@ip-172-31-18-41 ~]$ touch class
+[ec2-user@ip-172-31-18-41 ~]$ ls
+class  class36  devops
+[ec2-user@ip-172-31-18-41 ~]$ ll
+total 0
+-rw-r--r--. 1 ec2-user ec2-user  0 May  4 16:46 class
+drwxr-xr-x. 2 ec2-user ec2-user  6 May  4 15:37 class36
+drwxr-xr-x. 3 ec2-user ec2-user 19 May  4 15:54 devops
+[ec2-user@ip-172-31-18-41 ~]$ touch list,text hello,py greet.sh app.java monitor.sh deploy.sh
+[ec2-user@ip-172-31-18-41 ~]$ ll
+total 0
+-rw-r--r--. 1 ec2-user ec2-user  0 May  4 16:49 app.java
+-rw-r--r--. 1 ec2-user ec2-user  0 May  4 16:46 class
+drwxr-xr-x. 2 ec2-user ec2-user  6 May  4 15:37 class36
+-rw-r--r--. 1 ec2-user ec2-user  0 May  4 16:49 deploy.sh
+drwxr-xr-x. 3 ec2-user ec2-user 19 May  4 15:54 devops
+-rw-r--r--. 1 ec2-user ec2-user  0 May  4 16:49 greet.sh
+-rw-r--r--. 1 ec2-user ec2-user  0 May  4 16:49 hello,py
+-rw-r--r--. 1 ec2-user ec2-user  0 May  4 16:49 list,text
+-rw-r--r--. 1 ec2-user ec2-user  0 May  4 16:49 monitor.sh
+[ec2-user@ip-172-31-18-41 ~]$ ls
+app.java  class36    devops    hello,py   monitor.sh
+class     deploy.sh  greet.sh  list,text
+[ec2-user@ip-172-31-18-41 ~]$ mkdir -p boa tesla wf td bb mtn fb cnn
+[ec2-user@ip-172-31-18-41 ~]$ ls
+app.java  class    deploy.sh  greet.sh   monitor.sh  tesla
+bb        class36  devops     hello,py   mtn         wf
+boa       cnn      fb         list,text  td
+[ec2-user@ip-172-31-18-41 ~]$ ll
+total 0
+-rw-r--r--. 1 ec2-user ec2-user  0 May  4 16:49 app.java
+drwxr-xr-x. 2 ec2-user ec2-user  6 May  4 16:56 bb
+drwxr-xr-x. 2 ec2-user ec2-user  6 May  4 16:56 boa
+-rw-r--r--. 1 ec2-user ec2-user  0 May  4 16:46 class
+drwxr-xr-x. 2 ec2-user ec2-user  6 May  4 15:37 class36
+drwxr-xr-x. 2 ec2-user ec2-user  6 May  4 16:56 cnn
+-rw-r--r--. 1 ec2-user ec2-user  0 May  4 16:49 deploy.sh
+drwxr-xr-x. 3 ec2-user ec2-user 19 May  4 15:54 devops
+drwxr-xr-x. 2 ec2-user ec2-user  6 May  4 16:56 fb
+-rw-r--r--. 1 ec2-user ec2-user  0 May  4 16:49 greet.sh
+-rw-r--r--. 1 ec2-user ec2-user  0 May  4 16:49 hello,py
+-rw-r--r--. 1 ec2-user ec2-user  0 May  4 16:49 list,text
+-rw-r--r--. 1 ec2-user ec2-user  0 May  4 16:49 monitor.sh
+drwxr-xr-x. 2 ec2-user ec2-user  6 May  4 16:56 mtn
+drwxr-xr-x. 2 ec2-user ec2-user  6 May  4 16:56 td
+drwxr-xr-x. 2 ec2-user ec2-user  6 May  4 16:56 tesla
+drwxr-xr-x. 2 ec2-user ec2-user  6 May  4 16:56 wf
+[ec2-user@ip-172-31-18-41 ~]$ mkdir  boa tesla wf td bb mtn fb cnn
+mkdir: cannot create directory ‘boa’: File exists
+mkdir: cannot create directory ‘tesla’: File exists
+mkdir: cannot create directory ‘wf’: File exists
+mkdir: cannot create directory ‘td’: File exists
+mkdir: cannot create directory ‘bb’: File exists
+mkdir: cannot create directory ‘mtn’: File exists
+mkdir: cannot create directory ‘fb’: File exists
+mkdir: cannot create directory ‘cnn’: File exists
+[ec2-user@ip-172-31-18-41 ~]$ rmdir  boa tesla wf td bb mtn fb cnn
+[ec2-user@ip-172-31-18-41 ~]$ ls
+app.java  class36    devops    hello,py   monitor.sh
+class     deploy.sh  greet.sh  list,text
+[ec2-user@ip-172-31-18-41 ~]$ mkdir -v  boa tesla wf td bb mtn fb cnn
+mkdir: created directory 'boa'
+mkdir: created directory 'tesla'
+mkdir: created directory 'wf'
+mkdir: created directory 'td'
+mkdir: created directory 'bb'
+mkdir: created directory 'mtn'
+mkdir: created directory 'fb'
+mkdir: created directory 'cnn'
+[ec2-user@ip-172-31-18-41 ~]$ pwd
+/home/ec2-user
+[ec2-user@ip-172-31-18-41 ~]$ rm -rf *
+[ec2-user@ip-172-31-18-41 ~]$ ls
+[ec2-user@ip-172-31-18-41 ~]$ pwd
+/home/ec2-user
+[ec2-user@ip-172-31-18-41 ~]$ mkdir fb
+[ec2-user@ip-172-31-18-41 ~]$ ls
+fb
+[ec2-user@ip-172-31-18-41 ~]$ cd fb/
+[ec2-user@ip-172-31-18-41 fb]$ pwd
+/home/ec2-user/fb
+[ec2-user@ip-172-31-18-41 fb]$ touch list,text hello,py greet.sh app.java monitor.sh deploy.sh
+[ec2-user@ip-172-31-18-41 fb]$ ls
+app.java  deploy.sh  greet.sh  hello,py  list,text  monitor.sh
+[ec2-user@ip-172-31-18-41 fb]$ mkdir fba
+[ec2-user@ip-172-31-18-41 fb]$ ls
+app.java  deploy.sh  fba  greet.sh  hello,py  list,text  monitor.sh
+[ec2-user@ip-172-31-18-41 fb]$ echo "I Love Landmark Technology"
+I Love Landmark Technology
+[ec2-user@ip-172-31-18-41 fb]$  echo "I Love Landmark Technology" > landmark.txt
+[ec2-user@ip-172-31-18-41 fb]$ ls
+app.java   fba       hello,py      list,text
+deploy.sh  greet.sh  landmark.txt  monitor.sh
+[ec2-user@ip-172-31-18-41 fb]$ cat landmark.txt
+I Love Landmark Technology
+[ec2-user@ip-172-31-18-41 fb]$ echo "My name is the next big name in global IT solutions"
+My name is the next big name in global IT solutions
+[ec2-user@ip-172-31-18-41 fb]$ echo "My name is the next big name in global IT solutions" > global.it
+[ec2-user@ip-172-31-18-41 fb]$ ls
+app.java   fba        greet.sh  landmark.txt  monitor.sh
+deploy.sh  global.it  hello,py  list,text
+[ec2-user@ip-172-31-18-41 fb]$ echo "simon" > team36
+[ec2-user@ip-172-31-18-41 fb]$ cat team36
+simon
+[ec2-user@ip-172-31-18-41 fb]$ echo "Goodness" > team36
+[ec2-user@ip-172-31-18-41 fb]$ cat team36
+Goodness
+[ec2-user@ip-172-31-18-41 fb]$ echo "patience" > team36
+[ec2-user@ip-172-31-18-41 fb]$ cat team36
+patience
+[ec2-user@ip-172-31-18-41 fb]$ rm -rf *
+[ec2-user@ip-172-31-18-41 fb]$ ls
+[ec2-user@ip-172-31-18-41 fb]$ echo "patience" >> team36
+[ec2-user@ip-172-31-18-41 fb]$ echo "simon" >> team36
+[ec2-user@ip-172-31-18-41 fb]$ echo "james" >> team36
+[ec2-user@ip-172-31-18-41 fb]$ echo "uzo" >> team36
+[ec2-user@ip-172-31-18-41 fb]$ echo "abimbola" >> team36
+[ec2-user@ip-172-31-18-41 fb]$ cat team36
+patience
+simon
+james
+uzo
+abimbola
+[ec2-user@ip-172-31-18-41 fb]$ ls
+team36
+[ec2-user@ip-172-31-18-41 fb]$ vi text.txt
+[ec2-user@ip-172-31-18-41 fb]$ cat text.txt
+1. Simon
+2. Legah
+3. Landmark
+4. Dominion
+n
+[ec2-user@ip-172-31-18-41 fb]$ ls
+team36  text.txt
+[ec2-user@ip-172-31-18-41 fb]$ vi list,txt
+[ec2-user@ip-172-31-18-41 fb]$ vi list.txt
+[ec2-user@ip-172-31-18-41 fb]$ ls
+list,txt  team36  text.txt
+[ec2-user@ip-172-31-18-41 fb]$ cat list.txt
+cat: list.txt: No such file or directory
+[ec2-user@ip-172-31-18-41 fb]$ vi text.txt
+[ec2-user@ip-172-31-18-41 fb]$ vi list.txt
+[ec2-user@ip-172-31-18-41 fb]$ cat list.txt
+1. Simon
+2. Legah
+3. Landmark
+4. Dominion
+5. Laura
+
+
+[ec2-user@ip-172-31-18-41 fb]$ vi list.txt
+[ec2-user@ip-172-31-18-41 fb]$ cat list.txt
+1. Simon
+2. Legah
+3. Landmark
+4. Dominion
+5. Laura
+6. Mambo
+
+[ec2-user@ip-172-31-18-41 fb]$ vi billioniare.sh
+[ec2-user@ip-172-31-18-41 fb]$ cat billioniare.sh
+Simon
+Legah
+Paul
+John
+Peter
+James
+Tita
+Pefok
+Raymond
+Fabiola
+[ec2-user@ip-172-31-18-41 fb]$ cat -n billionaire.sh
+cat: billionaire.sh: No such file or directory
+[ec2-user@ip-172-31-18-41 fb]$ cat -n billioniare.sh
+     1  Simon
+     2  Legah
+     3  Paul
+     4  John
+     5  Peter
+     6  James
+     7  Tita
+     8  Pefok
+     9  Raymond
+    10  Fabiola
+[ec2-user@ip-172-31-18-41 fb]$ less billioniare.sh
+[ec2-user@ip-172-31-18-41 fb]$ head -1 billioniare.sh
+Simon
+[ec2-user@ip-172-31-18-41 fb]$ head -2 billioniare.sh
+Simon
+Legah
+[ec2-user@ip-172-31-18-41 fb]$ ls
+billioniare.sh  list,txt  list.txt  team36  text.txt
+[ec2-user@ip-172-31-18-41 fb]$ ls /tmp
+systemd-private-0d020432b40b4af78ed01f7997b264e7-chronyd.service-tdzCTr
+systemd-private-0d020432b40b4af78ed01f7997b264e7-dbus-broker.service-AWNo1W
+systemd-private-0d020432b40b4af78ed01f7997b264e7-kdump.service-hDh2fz
+systemd-private-0d020432b40b4af78ed01f7997b264e7-systemd-logind.service-AuvIyk
+[ec2-user@ip-172-31-18-41 fb]$ cp billioniare.sh /tmp
+[ec2-user@ip-172-31-18-41 fb]$ ls
+billioniare.sh  list,txt  list.txt  team36  text.txt
+[ec2-user@ip-172-31-18-41 fb]$ pwd
+/home/ec2-user/fb
+[ec2-user@ip-172-31-18-41 fb]$ ls
+billioniare.sh  list,txt  list.txt  team36  text.txt
+[ec2-user@ip-172-31-18-41 fb]$ ls /tmp
+billioniare.sh
+systemd-private-0d020432b40b4af78ed01f7997b264e7-chronyd.service-tdzCTr
+systemd-private-0d020432b40b4af78ed01f7997b264e7-dbus-broker.service-AWNo1W
+systemd-private-0d020432b40b4af78ed01f7997b264e7-kdump.service-hDh2fz
+systemd-private-0d020432b40b4af78ed01f7997b264e7-systemd-logind.service-AuvIyk
+[ec2-user@ip-172-31-18-41 fb]$ mv billioniare.sh billioniares
+[ec2-user@ip-172-31-18-41 fb]$ ls
+billioniares  list,txt  list.txt  team36  text.txt
+[ec2-user@ip-172-31-18-41 fb]$ mv fb/ /tmp/
+mv: cannot stat 'fb/': No such file or directory
+[ec2-user@ip-172-31-18-41 fb]$ ls
+billioniares  list,txt  list.txt  team36  text.txt
+[ec2-user@ip-172-31-18-41 fb]$ pwd
+/home/ec2-user/fb
+[ec2-user@ip-172-31-18-41 fb]$ ls /tmp/
+billioniare.sh
+systemd-private-0d020432b40b4af78ed01f7997b264e7-chronyd.service-tdzCTr
+systemd-private-0d020432b40b4af78ed01f7997b264e7-dbus-broker.service-AWNo1W
+systemd-private-0d020432b40b4af78ed01f7997b264e7-kdump.service-hDh2fz
+systemd-private-0d020432b40b4af78ed01f7997b264e7-systemd-logind.service-AuvIyk
+[ec2-user@ip-172-31-18-41 fb]$ ls -l
+total 20
+-rw-r--r--. 1 ec2-user ec2-user 61 May  4 18:23 billioniares
+-rw-r--r--. 1 ec2-user ec2-user 42 May  4 17:57 list,txt
+-rw-r--r--. 1 ec2-user ec2-user 61 May  4 18:13 list.txt
+-rw-r--r--. 1 ec2-user ec2-user 34 May  4 17:31 team36
+-rw-r--r--. 1 ec2-user ec2-user 44 May  4 17:43 text.txt
+[ec2-user@ip-172-31-18-41 fb]$ ll -h
+total 20K
+-rw-r--r--. 1 ec2-user ec2-user 61 May  4 18:23 billioniares
+-rw-r--r--. 1 ec2-user ec2-user 42 May  4 17:57 list,txt
+-rw-r--r--. 1 ec2-user ec2-user 61 May  4 18:13 list.txt
+-rw-r--r--. 1 ec2-user ec2-user 34 May  4 17:31 team36
+-rw-r--r--. 1 ec2-user ec2-user 44 May  4 17:43 text.txt
+[ec2-user@ip-172-31-18-41 fb]$ ll
+total 20
+-rw-r--r--. 1 ec2-user ec2-user 61 May  4 18:23 billioniares
+-rw-r--r--. 1 ec2-user ec2-user 42 May  4 17:57 list,txt
+-rw-r--r--. 1 ec2-user ec2-user 61 May  4 18:13 list.txt
+-rw-r--r--. 1 ec2-user ec2-user 34 May  4 17:31 team36
+-rw-r--r--. 1 ec2-user ec2-user 44 May  4 17:43 text.txt
+[ec2-user@ip-172-31-18-41 fb]$
